@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyComponent></MyComponent>
+      <MyComponent></MyComponent>
+      <MyComponent></MyComponent>
     </div>
   );
 }
 
-export default App;
+/** SPECIAL FUNCTION :: USING REACT :: return jsx */
+// <h1> :: <MyComponent>
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>React Heading </h1>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        error aperiam temporibus sunt alias iusto ex facere blanditiis non
+        eligendi impedit a et rerum, cumque beatae harum fuga ut! Vero.
+      </div>
+
+      <h4>Heading 6</h4>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda
+        sequi, excepturi molestiae veniam, error officiis earum repellat iste
+        iure rerum sed sit placeat facere ex dignissimos! Temporibus, sit
+        facere.
+      </div>
+    </div>
+  );
+};
