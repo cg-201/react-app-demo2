@@ -3,18 +3,23 @@ import "./App.css";
 import { useState } from "react";
 
 export default function App() {
-  const [list] = useState([1, 1, 1, 1]);
-
+  const [list] = useState([1, 1, 1, 1, 1]);
   return (
     <div>
-      <h1 className="bg-dark text-light p-3 sticky-top">React Bootstrap</h1>
+      <h1 className="bg-danger text-light p-3 sticky-top"> Mini Instagram</h1>
 
       {list.map((item, index) => (
-        <div key={index} className="alert-secondary p-3 m-3 rounded">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          ipsa, hic similique laboriosam iusto ea dolor maiores ullam voluptatum
-          error numquam ad dolore impedit? Suscipit rerum odio distinctio
-          eveniet dolore!
+        <div
+          key={index}
+          className="alert-secondary m-3 rounded"
+          style={{ height: "300px" }}
+        >
+          <img
+            src={"https://picsum.photos/300" + index}
+            className="rounded"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            alt=""
+          />
         </div>
       ))}
     </div>
