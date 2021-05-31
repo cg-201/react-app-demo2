@@ -5,10 +5,25 @@ import { useState } from "react";
 export default function App() {
   return (
     <div>
-      <ListExample2 />
+      <InlineStyleComponent />
     </div>
   );
 }
+
+const InlineStyleComponent = () => {
+  const [counter] = useState(100);
+
+  return (
+    <div>
+      <h1>Inline Styling</h1>
+      <div
+        style={{ backgroundColor: "royalblue", color: "white", padding: "8px" }}
+      >
+        {counter}
+      </div>
+    </div>
+  );
+};
 
 const ListExample2 = () => {
   const [list, setList] = useState([1, 2]);
