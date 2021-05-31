@@ -18,10 +18,7 @@ const MyDynamicInputCompoent = () => {
   const [tweetInput, setTweetInput] = useState("");
 
   // STEP 2 :: e is important here;
-  const readAndUpdateTweet = (e) => {
-    console.log(e.target.value);
-    setTweetInput(e.target.value);
-  };
+  const readAndUpdateTweet = (e) => setTweetInput(e.target.value);
 
   const postTheTweet = () => {
     setList([tweetInput, ...list]);
