@@ -5,8 +5,7 @@ export default function App() {
   return (
     <div>
       <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
+      <SecondComponent></SecondComponent>
     </div>
   );
 }
@@ -30,6 +29,14 @@ const MyComponent = () => {
         iure rerum sed sit placeat facere ex dignissimos! Temporibus, sit
         facere.
       </div>
+    </div>
+  );
+};
+
+const SecondComponent = () => {
+  return (
+    <div>
+      <h1>Second Component</h1>
     </div>
   );
 };
